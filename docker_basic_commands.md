@@ -69,7 +69,7 @@
 - ホスト→コンテナへコピー
   - docker cp [ホストのファイルパス] [コンテナ名]:[コンテナのファイルパス]
   ```
-  docker cp ./hoge mycentos:/opt
+  docker cp ./basic/hoge mycentos:/opt
   docker exec mycentos cat /opt/hoge
   --> fuga
   ```
@@ -81,7 +81,7 @@
   [root@1c96edcad68c /]# cat /opt/piyo
   --> piyopiyo
   [root@1c96edcad68c /]#exit
-  docker cp mycentos:/opt/piyo .
+  docker cp mycentos:/opt/piyo ./basic
   ```
 
 ## docker logs
