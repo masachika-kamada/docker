@@ -10,7 +10,7 @@
 - 具体的なデータ共有
   - docker run -v [ホストのディレクトリ]:[コンテナのディレクトリ] [イメージ名]
     ```
-    docker run -v C:/Users/MK/PythonProjects/docker/test:/usr/share/nginx/html --name mynginx -p 8080:80 nginx:1.16
+    docker run -v $PWD/test:/usr/share/nginx/html --name mynginx -p 8080:80 nginx:1.16
     ```
   - 確認（ブラウザ）
     - [http://localhost:8080](http://localhost:8080) で確認
